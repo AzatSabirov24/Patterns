@@ -1,7 +1,6 @@
 package strategy.right
 
 import strategy.naive.Direction
-import strategy.naive.Projectile
 
 sealed class Weapon {
     object Peashooter : Weapon()
@@ -13,15 +12,13 @@ class OurHero {
     private var direction = Direction.LEFT
     private var x: Int = 42
     private var y: Int = 173
-
     private var equipped: Weapon = Weapon.Peashooter
 
-    val shoot = fun() {
-        val projectile = when (equipped) {
+    fun shoot() {
+        when (equipped) {
             is Weapon.Peashooter -> Weapons.peashooter(x, y, direction)
             is Weapon.Banana -> Weapons.banana(x, y, direction)
         }
-        println("Fired: $projectile")
     }
 
     fun equip(weapon: Weapon) {
