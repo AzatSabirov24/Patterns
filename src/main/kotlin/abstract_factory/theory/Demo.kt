@@ -1,7 +1,6 @@
 package abstract_factory.theory
 
 import abstract_factory.theory.appliction.Application
-import abstract_factory.theory.gui_factory.GuiFactory
 import abstract_factory.theory.gui_factory.MacGuiFactory
 import abstract_factory.theory.gui_factory.WindowsGuiFactory
 import java.util.*

@@ -1,7 +1,7 @@
 package builder.theory
 
+import builder.Component
 import org.junit.jupiter.api.Assertions
-import org.junit.jupiter.api.assertAll
 import org.testng.annotations.Test
 
 class ComponentTest {

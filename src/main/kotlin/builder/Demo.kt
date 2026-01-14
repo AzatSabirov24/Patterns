@@ -1,4 +1,4 @@
-package builder.theory
+package builder
 
 object Demo {
 
