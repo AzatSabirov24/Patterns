@@ -1,4 +1,4 @@
-package strategy
+package strategy.right
 
 fun interface PaymentStrategy {
 

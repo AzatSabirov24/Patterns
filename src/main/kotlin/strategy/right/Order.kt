@@ -1,4 +1,4 @@
-package strategy
+package strategy.right
 
 class Order {
 
