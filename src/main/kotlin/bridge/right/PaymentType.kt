@@ -20,3 +20,11 @@ class GooglePayPaymentType(private val paymentProvider: PaymentProvider) : Payme
         paymentProvider.process()
     }
 }
+
+class QrPaymentType(private val paymentProvider: PaymentProvider) : PaymentType {
+
+    override fun pay(amount: Int) {
+        println("qr payment $amount")
+        paymentProvider.process()
+    }
+}
