@@ -1,0 +1,7 @@
+package strategy
+
+fun main() {
+
+    val order = Order()
+    order.checkout(paymentStrategy = CardPayment, amount = 50)
+}
